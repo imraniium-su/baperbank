@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank inside</title>
+</head>
+
+<body>
+    <header class="mb-6">
+        <h1 class="text-5xl font-semibold text-emerald-400 text-center mt-6 ">
+            Let's Go For some <span class="text-fuchsia-700 font-bold">Moooooney!!!</span>
+        </h1>
+    </header>
+    <main>
+        <!-- update  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-500 p-8 rounded-md">
+                    <h3 class="text-3xl">
+                        Deposit
+                    </h3>
+                    <h3 class="text-5xl">$<span id="deposit-money">00</span></h3>
+                </div>
+                <div class="bg-red-500 p-8 rounded-md">
+                    <h3 class="text-3xl">
+                        Widthdraw
+                    </h3>
+                    <h3 class="text-5xl">$<span id="widthdraw-money">00</span> </h3>
+                </div>
+                <div class="bg-orange-500 p-8 rounded-md">
+                    <h3 class="text-3xl">
+                        Blance
+                    </h3>
+                    <h3 class="text-5xl">$ <span id="blance-money">00</span> </h3>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- deposit and widthdraw  -->
+
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto ">
+                <div class="bg-sky-400 p-8 rounded-md">
+                    <h3 class="text-3xl mb-3 text-white">
+                        Please Deposit
+                    </h3>
+                    <input class=" w-9/12 mb-3 rounded-md block px-3 " id="user-deposit" type="text"
+                        placeholder="$ Please input your amount of money">
+                    <button id="btn-deposit"
+                        class="bg-orange-500 py-2 px-6 rounded-md text-left text-white font-bold hover:bg-gray-600">Deposite</button>
+                </div>
+                <div class="bg-rose-400 p-8 rounded-md">
+                    <h3 class="text-3xl mb-3 text-white">
+                        Please Widthdraw
+                    </h3>
+                    <input class=" w-9/12 mb-3 rounded-md block px-3 " id="user-widthdraw" type="email"
+                        placeholder="$ Please input your amount of money">
+                    <button id="btn-widthdraw"
+                        class="bg-orange-500 py-2 px-6 rounded-md text-left text-white font-bold hover:bg-gray-600">Withdraw</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+
+</html>
